@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+/* @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"); */
+/* 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+body {
+  width: 100vh;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(136, 136, 136);
+}
+.wrapper {
+  font-size: 2rem;
+  display: flex;
+  line-height: 90px;
+  height: 90px;
+  overflow: hidden;
+}
+
+.wrapper .static-text {
+  color: white;
+  font-weight: 600;
+}
+.dynamic-texts {
+  margin-left: 15px;
+}
+
+.dynamic-texts .frontend {
+  color: rgb(255, 230, 0);
+}
+.dynamic-texts .student {
+  color: rgb(181, 40, 89);
+}
+.dynamic-texts .designer {
+  color: rgb(125, 226, 238);
+}
+
+.dynamic-texts li {
+  list-style: none;
+  font-weight: 700;
+  top: 0;
+  animation: slide 8s steps(4) infinite;
+  position: relative;
+}
+@keyframes slide{
+    100%{
+        top: -360px; 
+    }
+}
+
+.dynamic-texts li::after {
+  content: "";
+  background-color: rgb(136, 136, 136);
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-left: 2px solid red;
+  animation: typing 4s steps(15) infinite;
+}
+
+@keyframes typing {
+  40%,
+  60% {
+    left: calc(100% + 30px);
+  }
+  100% {
+    left: 0;
+  }
+} */
+
+/* another way */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  height: 100vh;
+  padding: 150px 75px;
+  background: #ebeef3;
+  text-align: center;
+}
+
+h1 {
+  font-size: 50px;
+}
+#typewriter {
+  color: #8191ed;
+  font-weight: bold;
+  margin-right: 0;
+  padding-right: 0;
+}
+
+#cursor {
+  color: #8191ed;
+  animation: blink 1s linear infinite;
+  margin-left: 0;
+  padding-left: 0;
+}
+@keyframes blink {
+  0% {
+    opacity: 100%;
+  }
+  30% {
+    opacity: 0%;
+  }
+}
